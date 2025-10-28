@@ -40,10 +40,10 @@ final_df = pd.merge(orders_sellers, payments, on="order_id", how="left")
 
 print("All main tables joined successfully!")
 
-# === Optional: Handle missing values ===
+# Handle missing values
 final_df.fillna({"product_category_name": "unknown"}, inplace=True)
 
-# === Save transformed file ===
+# Save transformed file
 output_path = PROCESSED_DIR / "olist_master_cleaned.csv"
 final_df.to_csv(output_path, index=False)
 print(f"Saved cleaned master dataset → {output_path}")
