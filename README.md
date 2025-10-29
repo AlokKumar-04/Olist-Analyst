@@ -27,15 +27,12 @@ The goal is to design an **end-to-end data pipeline** that extracts, transforms,
 ```
 Olist_Analytics/
 │
-├── data_raw/ # Raw dataset files (CSV)
-├── data_processed/ # Cleaned JSONL files after extraction
-├── notebooks/ # Jupyter notebooks for exploration
-├── reports/ # Output reports / query results
-├── scripts/ # Python & SQL scripts
-│ ├── 01_extract.py # Converts raw CSV → JSONL
-│ ├── 02_transform_load.py # Loads cleaned data into MySQL
-│ └── analytics.sql # Business analytical SQL queries
-└── venv/ # Virtual environment
+├── data_raw/          # Raw dataset files (CSV)
+├── data_processed/    # Cleaned JSONL files after extraction
+├── notebooks/         # Jupyter notebooks for exploration
+├── reports/           # Output reports / query results
+├── scripts/           # Python & SQL scripts
+└── venv/              # Virtual environment
 ```
 
 ## 📚 Key Learning Outcomes
